@@ -6,7 +6,7 @@ import { useParams } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 const postRating = async (movieId) => {
-  const response = await fetch(`http://localhost:8081/rating/rate`, {
+  const response = await fetch(`https://movie-orld.onrender.com/rating/rate`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

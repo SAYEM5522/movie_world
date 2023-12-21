@@ -8,7 +8,7 @@ import { toast } from 'react-toastify';
 
 
 const postData = async (newData) => {
-  const response = await fetch('http://localhost:8081/watch/watchlist', {
+  const response = await fetch('https://movie-orld.onrender.com/watch/watchlist', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

@@ -1,7 +1,7 @@
 // api.js
 import { useMutation } from 'react-query';
 
-const API_URL = 'http://localhost:8081/movie/createMovies';
+const API_URL = 'https://movie-orld.onrender.com/movie/createMovies';
 
 export const submitFormData = async (formData) => {
   formData.userId=localStorage.getItem("e")

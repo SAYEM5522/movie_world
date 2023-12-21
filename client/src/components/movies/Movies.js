@@ -5,7 +5,7 @@ import { useQuery } from 'react-query';
 import Loader from '../authentication/Loader';
 const fetchData = async () => {
   const email=localStorage.getItem("e")
-  const response = await fetch(`http://localhost:8081/movie/all-rating-movies/${email}`);
+  const response = await fetch(`https://movie-orld.onrender.com/movie/all-rating-movies/${email}`);
   if (!response.ok) {
     throw new Error('Failed to fetch data');
   }

@@ -4,7 +4,7 @@ import { useQuery } from 'react-query';
 import Loader from '../authentication/Loader';
 import { useNavigate } from 'react-router-dom';
 const fetchData = async () => {
-  const response = await fetch('http://localhost:8081/movie/all-upcoming-movies');
+  const response = await fetch('https://movie-orld.onrender.com/movie/all-upcoming-movies');
   if (!response.ok) {
     throw new Error('Failed to fetch data');
   }

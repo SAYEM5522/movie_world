@@ -18,45 +18,8 @@ const style={
   height:550,
   border:"2px"
 }
-const movieCard=[
-  {
-    id:1,
-    url:"https://image.tmdb.org/t/p/original//vBZ0qvaRxqEhZwl6LWmruJqWE8Z.jpg",
-
-
-  },
-  {
-    id:2,
-    url:"https://image.tmdb.org/t/p/original//vBZ0qvaRxqEhZwl6LWmruJqWE8Z.jpg",
-
-
-  },
-  {
-    id:3,
-    url:"https://image.tmdb.org/t/p/original//vBZ0qvaRxqEhZwl6LWmruJqWE8Z.jpg",
-
-
-  },
-  {
-    id:4,
-    url:"https://image.tmdb.org/t/p/original//vBZ0qvaRxqEhZwl6LWmruJqWE8Z.jpg",
-
-
-  },
-  {
-    id:5,
-    url:"https://image.tmdb.org/t/p/original//vBZ0qvaRxqEhZwl6LWmruJqWE8Z.jpg",
-
-
-  },
-  {
-    id:6,
-    url:"https://image.tmdb.org/t/p/original//vBZ0qvaRxqEhZwl6LWmruJqWE8Z.jpg",
-  },
-  
-]
 const fetchData = async (userId) => {
-  const response = await fetch(`http://localhost:8081/movie/all-added-movies/${userId}`);
+  const response = await fetch(`https://movie-orld.onrender.com/movie/all-added-movies/${userId}`);
   if (!response.ok) {
     throw new Error('Failed to fetch data');
   }

@@ -1,7 +1,7 @@
 import { useMutation, useQueryClient } from 'react-query';
 import { toast } from 'react-toastify';
 
-const API_URL = 'http://localhost:8081/user';
+const API_URL = 'https://movie-orld.onrender.com/user';
 
 const loginUser = async (credentials) => {
   const response = await fetch(`${API_URL}/signin`, {

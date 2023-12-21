@@ -8,7 +8,7 @@ import { ToastContainer } from 'react-toastify';
 import Loader from '../authentication/Loader';
 const fetchData = async (movieId) => {
   
-  const response = await fetch(`http://localhost:8081/movie/movies/${movieId}`);
+  const response = await fetch(`https://movie-orld.onrender.com/movie/movies/${movieId}`);
   if (!response.ok) {
     throw new Error('Failed to fetch data');
   }

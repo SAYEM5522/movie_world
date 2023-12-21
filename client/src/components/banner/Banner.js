@@ -8,7 +8,7 @@ import Header from '../header/Header';
 import { useQuery } from 'react-query';
 import Loader from '../authentication/Loader';
 const fetchData = async () => {
-  const response = await fetch(`http://localhost:8081/banners`);
+  const response = await fetch(`https://movie-orld.onrender.com/banners`);
   if (!response.ok) {
     throw new Error('Failed to fetch data');
   }
